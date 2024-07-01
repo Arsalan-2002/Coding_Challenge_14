@@ -1,5 +1,3 @@
-<!-- U32196076 -->
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +8,43 @@
 </head>
 <body>
     <h1>Financial Calculator</h1>
-    <!-- Add UI elements here -->
+
+    <div>
+        <h2>Interest Rate Calculation</h2>
+        <label for="principal-interest">Principal: </label>
+        <input type="number" id="principal-interest">
+        <label for="rate-interest">Rate: </label>
+        <input type="number" id="rate-interest" step="0.01">
+        <label for="time-interest">Time: </label>
+        <input type="number" id="time-interest">
+        <button id="calculate-interest">Calculate Interest</button>
+        <p id="interest-result"></p>
+    </div>
+
+    <div>
+        <h2>Loan Payment Calculation</h2>
+        <label for="principal-loan">Principal: </label>
+        <input type="number" id="principal-loan">
+        <label for="rate-loan">Annual Rate: </label>
+        <input type="number" id="rate-loan" step="0.01">
+        <label for="time-loan">Number of Payments: </label>
+        <input type="number" id="time-loan">
+        <button id="calculate-loan">Calculate Loan Payment</button>
+        <p id="loan-result"></p>
+    </div>
+
+    <div>
+        <h2>Investment Return Calculation</h2>
+        <label for="principal-investment">Principal: </label>
+        <input type="number" id="principal-investment">
+        <label for="rate-investment">Annual Rate: </label>
+        <input type="number" id="rate-investment" step="0.01">
+        <label for="time-investment">Time (years): </label>
+        <input type="number" id="time-investment">
+        <label for="compounded-investment">Times Compounded per Year: </label>
+        <input type="number" id="compounded-investment">
+        <button id="calculate-investment">Calculate Investment Return</button>
+        <p id="investment-result"></p>
+    </div>
 </body>
 </html>
