@@ -1,4 +1,4 @@
-export function calculateLoanPayment(principal, rate, n) {
-    const r = rate / 12;
-    return (principal * r * Math.pow((1 + r), n)) / (Math.pow((1 + r), n) - 1);
+export function calculateLoanPayment(principal, annualRate, numberOfPayments) {
+    const monthlyRate = annualRate / 12;
+    return (principal * monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
 }
